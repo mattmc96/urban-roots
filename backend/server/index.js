@@ -1,26 +1,30 @@
-require("dotenv").config()
-const express = require("express")
-const mongoose = require("mongoose")
-const cors = require("cors")
-const cookieParser = require("cookie-parser")
-const bodyParser = require("body-parser")
-const userRouter = require("../routes/user")
+const express = require("express");
+const app = express();
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 
-const app = express()
+dotenv.config();
 
-app.use(cors())
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: true}))
-app.use(cookieParser())
-app.use(express.json())
-app.use('/user', userRouter)
+// connect to db
+mongoose.connect(
+  process.env.DB_CONNECT,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  () => console.log("connected to db")
+);
 
-const {SERVER_PORT, CONNECTION_STRING} = process.env
+// import routes
+const authRoutes = require("../routes/auth");
+const dashboardRoutes = require("../routes/dashboard");
+const verifyToken = require("../routes/validate-token");
 
-mongoose.connect(CONNECTION_STRING, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true}, () => {
-    console.log("DB Connected! Let's get it!")
-})
+// middlewares
+app.use(express.json()); // for body parser
 
-app.listen(SERVER_PORT, () => {
-    console.log(`SERVER CONNECTED ON PORT ${SERVER_PORT}!`)
-})
+// route middlewares
+app.use("/api/user", authRoutes);
+app.use("/api/dashboard", verifyToken, dashboardRoutes);
+
+app.listen(3000, () => console.log("server is running..."));
