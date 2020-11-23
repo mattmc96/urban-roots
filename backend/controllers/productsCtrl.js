@@ -35,3 +35,27 @@ exports.findAll = (req, res) => {
         })
     })
 }
+
+exports.findOne = (req, res) => {
+    Product.findById(req.params.productId)
+    .then((product) => {
+        if(!product) {
+            res.status(404).send({
+                message: "Product not found with id at"
+                + req.params.productId
+            })
+        }
+        res.send(product)
+    })
+    .catch(err => {
+        if(err.kind === "ObjectId") {
+            res.status(404).send({
+                message: "Product not found with id at"
+                + req.params.productId
+            })
+        }
+        return res.status(500).send({
+            message: "Error"
+        })
+    })
+}
