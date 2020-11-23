@@ -1,15 +1,10 @@
-import React from "react"
+import React from 'react'
 
-function Login() {
+export const Login = () => {
     return (
-<div>
-    Lorem ipsum dolor sit amet, consectetur adip lorem ipsum lorem ipsum lorem ipsum
-    Lorem ipsum dolor sit amet, consectetur adip lorem ipsum lorem ipsum lorem ipsum
-    Lorem ipsum dolor sit amet, consectetur adip lorem ipsum lorem ipsum lorem ipsum
-    Lorem ipsum dolor sit amet, consectetur adip lorem ipsum lorem ipsum lorem ipsum
-    Lorem ipsum dolor sit amet, consectetur adip lorem ipsum lorem ipsum lorem ipsum
-</div>
-
+        <div>
+            this is a div
+        </div>
     )
 }
 
