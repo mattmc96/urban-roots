@@ -1,34 +1,25 @@
-const db = require("../models");
+const Product = require("../model/Products");
 
-// Defining methods for the products controller
-module.exports = {
-  findAll: function (req, res) {
-    db.Product.find(req.query)
-      .sort({ date: -1 })
-      .then((dbModel) => res.json(dbModel))
-      .catch((err) => res.status(422).json(err + "test"));
-  },
-  findById: function (req, res) {
-    db.Product.findById(req.params.id)
-      .then((dbModel) => res.json(dbModel))
-      .catch((err) => res.status(422).json(err));
-  },
-
-  create: function (req, res) {
-    db.Product.create(req.body)
-
-      .then((dbModel) => res.json(dbModel))
-      .catch((err) => res.status(422).json(err));
-  },
-  update: function (req, res) {
-    db.Product.findOneAndUpdate({ _id: req.params.id }, req.body)
-      .then((dbModel) => res.json(dbModel))
-      .catch((err) => res.status(422).json(err));
-  },
-  remove: function (req, res) {
-    db.Product.findById({ _id: req.params.id })
-      .then((dbModel) => dbModel.remove())
-      .then((dbModel) => res.json(dbModel))
-      .catch((err) => res.status(422).json(err));
-  },
-};
+exports.create = (req, res) => {
+    if(!req.body) {
+        return res.status(400).send({
+            message: "Product cannot be created"
+        })
+    }
+    const product = new Product({
+        name: req.body.name || "No Product Title",
+        price: req.body.price,
+        image: req.body.image,
+        id: req.body.id,
+        category: req.body.category
+    })
+    product.save()
+    .then((data) => {
+        res.send(data)
+    })
+    .catch((err) => {
+        res.status(500).send({
+            message: "Error creating"
+        })
+    })
+}

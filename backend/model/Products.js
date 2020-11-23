@@ -28,11 +28,12 @@ const productSchema = new mongoose.Schema({
     },
 })
 
-module.exports = mongoose.model("Product", productSchema)
+//Initial database structure. These are the products.
+const Product = mongoose.model("Product", productSchema);
 
 Product.create (
     {
-        name: "Echeveria Laui ",
+        name: "Echeveria Laui",
         price: 12,
         image: "https://sc02.alicdn.com/kf/HTB1m3uACgaTBuNjSszfq6xgfpXa0.jpg_350x350.jpg",
         id: 1,
@@ -157,8 +158,6 @@ Product.create (
         id: 17,
         category: "Cacti"
     },
-    // Drop the 'urban roots' collection from the current database
-    Product.db.dropCollection("products", function (err, result) {})
 )
 
-module.exports = "Product"
+module.exports = Product
