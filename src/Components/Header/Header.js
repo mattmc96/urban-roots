@@ -21,15 +21,15 @@ class Header extends Component {
     <ReactBootStrap.Nav className="mr-auto">
       <ReactBootStrap.Nav.Link href="/">Home</ReactBootStrap.Nav.Link>
       <ReactBootStrap.NavDropdown title="Category" id="basic-nav-dropdown">
-        <ReactBootStrap.NavDropdown.Item href="#action/3.1">Succulents</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="#action/3.2">Foliages</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="#action/3.3">Florals</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/succulents">Succulents</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/">Foliages</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/florals">Florals</ReactBootStrap.NavDropdown.Item>
         <ReactBootStrap.NavDropdown.Item href="#action/3.3">Palms</ReactBootStrap.NavDropdown.Item>
         <ReactBootStrap.NavDropdown.Item href="#action/3.3">Ficuses</ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
-      <ReactBootStrap.Nav.Link href="#link">Shop</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="#link">Cart</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="#link">About Us</ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link href="/shop">Shop</ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link href="/cart">Cart</ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link href="/about">About Us</ReactBootStrap.Nav.Link>
     </ReactBootStrap.Nav>
 
     <ReactBootStrap.Nav className="mr-auto">
