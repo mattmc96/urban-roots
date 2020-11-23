@@ -41,7 +41,7 @@ exports.findOne = (req, res) => {
     .then((product) => {
         if(!product) {
             res.status(404).send({
-                message: "Product not found with id at"
+                message: "Product not found with id at "
                 + req.params.productId
             })
         }
@@ -50,8 +50,33 @@ exports.findOne = (req, res) => {
     .catch(err => {
         if(err.kind === "ObjectId") {
             res.status(404).send({
-                message: "Product not found with id at"
+                message: "Product not found with id at "
                 + req.params.productId
+            })
+        }
+        return res.status(500).send({
+            message: "Error"
+        })
+    })
+}
+
+exports.deleteOne = (req, res) => {
+    Product.findByIdAndRemove(req.params.productId)
+    .then((product) => {
+        if(!product) {
+            res.status(404).send({
+                message: "Product not found with id at "
+                + req.params.productId
+            })
+        }
+        res.send({
+            message: "Product has been deleted"
+        })
+    })
+    .catch(err => {
+        if(err.kind === "ObjectId" || err.name === "Not Found") {
+            res.status(404).send({
+                message: "Product not found with if at " + req.params.productId
             })
         }
         return res.status(500).send({
