@@ -22,10 +22,10 @@ class Header extends Component {
       <ReactBootStrap.Nav.Link href="/">Home</ReactBootStrap.Nav.Link>
       <ReactBootStrap.NavDropdown title="Category" id="basic-nav-dropdown">
         <ReactBootStrap.NavDropdown.Item href="/succulents">Succulents</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="/">Foliages</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/cacti">Cacti</ReactBootStrap.NavDropdown.Item>
         <ReactBootStrap.NavDropdown.Item href="/florals">Florals</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="#action/3.3">Palms</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="#action/3.3">Ficuses</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/palms">Palms</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/pothos">Pothos</ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
       <ReactBootStrap.Nav.Link href="/shop">Shop</ReactBootStrap.Nav.Link>
       <ReactBootStrap.Nav.Link href="/cart">Cart</ReactBootStrap.Nav.Link>

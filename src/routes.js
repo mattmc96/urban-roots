@@ -10,6 +10,9 @@ import Cart from "./Components/Cart/Cart"
 
 import Succulents from "./Components/Plants/Succulents/Succulents"
 import Florals from "./Components/Plants/Florals/Florals"
+import Palms from "./Components/Plants/Palms/Palms"
+import Cacti from "./Components/Plants/Cacti/Cacti"
+import Pothos from "./Components/Plants/Pothos/Pothos"
 
 export default function Routes() {
   <Router>
@@ -22,6 +25,9 @@ export default function Routes() {
       <Route path="/cart" component={Cart} />
       <Route path="/succulents" component={Succulents} />
       <Route path="/florals" component={Florals} />
+      <Route path="/palms" component={Palms} />
+      <Route path="/cacti" component={Cacti} />
+      <Route path="/pothos" component={Pothos} />
     </Switch>
   </Router>
 }
