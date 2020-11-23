@@ -12,7 +12,7 @@ mongoose.connect(
     useNewUrlParser: true,
     useUnifiedTopology: true,
   },
-  () => console.log("is your refrigerator plugged in? cuz mine is")
+  () => console.log(`is your refrigerator plugged in? cuz mine is at port ${process.env.SERVER_PORT}`)
 );
 
 // import routes
@@ -27,4 +27,4 @@ app.use(express.json()); // for body parser
 app.use("/api/user", authRoutes);
 app.use("/api/dashboard", verifyToken, dashboardRoutes);
 
-app.listen(process.env.SERVER_PORT, () => console.log("is your refrigerator running? cuz mine is"));
+app.listen(process.env.SERVER_PORT, () => console.log(`is your refrigerator running? cuz mine is at port ${process.env.SERVER_PORT}`));
