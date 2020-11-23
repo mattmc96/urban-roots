@@ -23,3 +23,15 @@ exports.create = (req, res) => {
         })
     })
 }
+
+exports.findAll = (req, res) => {
+    Product.find()
+    .then((products) => {
+        res.send(products)
+    })
+    .catch((err) => {
+        res.status(500).send({
+            message: err.message
+        })
+    })
+}
