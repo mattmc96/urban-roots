@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
-const morgan = require('morgan')
 
 dotenv.config()
 
@@ -36,7 +35,6 @@ app.get('/', (req, res) => {
 app.use(express.json()) // for body parser
 
 // route middlewares
-app.use(morgan('dev'))
 app.use('/api/user', authRoutes)
 app.use('/api/dashboard', verifyToken, dashboardRoutes)
 app.use('/api/products', productRoutes)
