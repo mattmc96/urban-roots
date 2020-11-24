@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import './shop.css'
 
 class Shop extends React.Component {
   state = {
@@ -28,10 +29,10 @@ class Shop extends React.Component {
 
   displayProducts = (products) => {
     return products.map((product, index) => (
-      <div key={index} className="product">
+      <div key={index} className="product-display">
         <h3>{product.name}</h3>
-        <p>{product.price}</p>
-        <img src={product.image} alt="plant-img" />
+        <p>${product.price}</p>
+        <img src={product.image} alt="plant-img" style={{ width: '20%' }} />
       </div>
     ))
   }

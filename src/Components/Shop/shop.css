@@ -1,0 +1,14 @@
+img {
+}
+
+/* .grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.product-display {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
