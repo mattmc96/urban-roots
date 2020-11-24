@@ -6,7 +6,7 @@ export const useStyles = makeStyles((theme) => ({
     height: '100%',
     textAlign: 'center',
     backgroundImage:
-      "url('https://images.unsplash.com/photo-1505159042738-73dbae90178f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80')",
+      "url('https://github.com/tessa-woodard/urban-roots/blob/main/src/Components/img/background.jpeg?raw=true')",
     backgroundAttachment: 'fixed',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -76,7 +76,7 @@ export const useStyles = makeStyles((theme) => ({
   imgBlock: {
     width: '38%',
     backgroundImage:
-      'url("https://github.com/tessa-woodard/urban-roots/blob/main/assets/about-us.jpeg?raw=true")',
+      'url("https://github.com/tessa-woodard/urban-roots/blob/main/src/Components/img/about-us.jpeg?raw=true")',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
@@ -96,7 +96,8 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: 38,
     lineHeight: '1.4em',
     marginBottom: 20,
-    fontFamily: "'Playfair Display', serif"
+    fontFamily: "'Playfair Display', serif",
+    fontWeight: 'bold'
   },
 
   thirdSubtitle: {
@@ -116,8 +117,12 @@ export const useStyles = makeStyles((theme) => ({
     }
   },
 
+  expertImg: {
+    borderRadius: '50%'
+  },
+
   expertTitle: {
-    fontSize: 12,
+    fontSize: 14,
     lineHeight: '2em',
     fontWeight: 500,
     letterSpacing: '.1em',
@@ -126,7 +131,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   expertName: {
-    fontSize: 12,
+    fontSize: 14,
     color: '#afafaf',
     margin: '2px 0 4px'
   }

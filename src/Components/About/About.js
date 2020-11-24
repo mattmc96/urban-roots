@@ -41,26 +41,41 @@ const AboutUs = () => {
         <div className={classes.expert}>
           <div>
             <img
+              className={classes.expertImg}
               src="https://images.unsplash.com/photo-1534945773093-1119ae5684ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvbWVufGVufDB8MnwwfA%3D%3D&auto=format&fit=crop&w=600&q=60"
               alt=""
-              width="60%"
-              height="350"
+              width="250px"
             />
             <h3 className={classes.expertTitle}>CRYSTAL BROOKS</h3>
             <span className={classes.expertName}>Florist</span>
           </div>
           <div>
-            <img src="./img/h3-team-img-2.png" alt="" />
+            <img
+              className={classes.expertImg}
+              src="https://images.unsplash.com/photo-1534945773093-1119ae5684ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvbWVufGVufDB8MnwwfA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              alt=""
+              width="250px"
+            />
             <h3 className={classes.expertTitle}>SHIRLEY HARRIS</h3>
             <span className={classes.expertName}>Manager</span>
           </div>
           <div>
-            <img src="./img/h3-team-img-3.png" alt="" />
+            <img
+              className={classes.expertImg}
+              src="https://images.unsplash.com/photo-1534945773093-1119ae5684ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvbWVufGVufDB8MnwwfA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              alt=""
+              width="250px"
+            />
             <h3 className={classes.expertTitle}>BEVERLY CLARK</h3>
             <span className={classes.expertName}>Florist</span>
           </div>
           <div>
-            <img src="./img/h3-team-img-4.png" alt="" />
+            <img
+              className={classes.expertImg}
+              src="https://images.unsplash.com/photo-1534945773093-1119ae5684ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvbWVufGVufDB8MnwwfA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              alt=""
+              width="250px"
+            />
             <h3 className={classes.expertTitle}>AMANDA WATKINS</h3>
             <span className={classes.expertName}>Florist</span>
           </div>
