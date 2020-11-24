@@ -15,15 +15,15 @@ const AboutUs = () => {
       <div className={classes.second}>
         <div className={classes.text}>
           <h2 className={classes.secondTitle}>
-            We take <span className={classes.flowers}> plants </span> personally
-            & we bring you happiness
+            Everyone Should Live with a Little More {''}
+            <span className={classes.flowers}> Green </span>
           </h2>
           <p className={classes.secondText}>
-            Our goal is to provide a place where all generations can find common
-            ground with a love for plants. We specialize in low maintenance
-            tropical houseplants. We strive to provide the same experience
-            through shipping our products by not only bringing something green
-            into everyones home but also providing an interactive experience.
+            Bloomscape is here to help strengthen your relationship with plants.
+            We make buying plants easy by delivering healthy, ready-to-go plants
+            to your door and setting you up with the tips and tricks you need to
+            help your plants thrive. Plants make life better. We make plants
+            easy.
           </p>
           <img
             src="https://fontmeme.com/permalink/201124/57ce50e8562b4c6d89e8c321c891f798.png"
@@ -42,41 +42,41 @@ const AboutUs = () => {
           <div>
             <img
               className={classes.expertImg}
-              src="https://images.unsplash.com/photo-1534945773093-1119ae5684ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvbWVufGVufDB8MnwwfA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              src="https://github.com/tessa-woodard/urban-roots/blob/main/src/Components/img/women1.jpeg?raw=true"
               alt=""
               width="250px"
             />
-            <h3 className={classes.expertTitle}>CRYSTAL BROOKS</h3>
+            <h3 className={classes.expertTitle}>RACHAEL BROOKS</h3>
             <span className={classes.expertName}>Florist</span>
           </div>
           <div>
             <img
               className={classes.expertImg}
-              src="https://images.unsplash.com/photo-1534945773093-1119ae5684ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvbWVufGVufDB8MnwwfA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              src="https://github.com/tessa-woodard/urban-roots/blob/main/src/Components/img/women2.jpeg?raw=true"
               alt=""
               width="250px"
             />
-            <h3 className={classes.expertTitle}>SHIRLEY HARRIS</h3>
+            <h3 className={classes.expertTitle}>KAYLA ADAMS</h3>
             <span className={classes.expertName}>Manager</span>
           </div>
           <div>
             <img
               className={classes.expertImg}
-              src="https://images.unsplash.com/photo-1534945773093-1119ae5684ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvbWVufGVufDB8MnwwfA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              src="https://github.com/tessa-woodard/urban-roots/blob/main/src/Components/img/women3.jpeg?raw=true"
               alt=""
               width="250px"
             />
-            <h3 className={classes.expertTitle}>BEVERLY CLARK</h3>
+            <h3 className={classes.expertTitle}>KRISTINA KNAPP</h3>
             <span className={classes.expertName}>Florist</span>
           </div>
           <div>
             <img
               className={classes.expertImg}
-              src="https://images.unsplash.com/photo-1534945773093-1119ae5684ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvbWVufGVufDB8MnwwfA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              src="https://github.com/tessa-woodard/urban-roots/blob/main/src/Components/img/women4.jpeg?raw=true"
               alt=""
               width="250px"
             />
-            <h3 className={classes.expertTitle}>AMANDA WATKINS</h3>
+            <h3 className={classes.expertTitle}>EMILY HOLLAND</h3>
             <span className={classes.expertName}>Florist</span>
           </div>
         </div>
