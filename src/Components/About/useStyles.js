@@ -6,7 +6,7 @@ export const useStyles = makeStyles((theme) => ({
     height: '100%',
     textAlign: 'center',
     backgroundImage:
-      "url('https://images.unsplash.com/photo-1505159042738-73dbae90178f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fHBsYW50c3xlbnwwfDB8MHw%3D&auto=format&fit=crop&w=600&q=60')",
+      "url('https://images.unsplash.com/photo-1505159042738-73dbae90178f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80')",
     backgroundAttachment: 'fixed',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -50,7 +50,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   flowers: {
-    color: theme.palette.primary.main
+    color: 'olivedrab'
   },
 
   secondTitle: {
@@ -75,7 +75,8 @@ export const useStyles = makeStyles((theme) => ({
 
   imgBlock: {
     width: '38%',
-    backgroundImage: 'url("./img/pexels-photo-1470168.jpeg")',
+    backgroundImage:
+      'url("https://images.unsplash.com/photo-1463320898484-cdee8141c787?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fHBsYW50c3xlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=600&q=60")',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',

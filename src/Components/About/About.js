@@ -15,15 +15,15 @@ const AboutUs = () => {
       <div className={classes.second}>
         <div className={classes.text}>
           <h2 className={classes.secondTitle}>
-            We take
-            <span className={classes.flowers}> flowers </span>
-            personally & we bring you happiness ring you happiness
+            We take <span className={classes.flowers}> flowers </span>{' '}
+            personally & we bring you happiness
           </h2>
           <p className={classes.secondText}>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec.
+            Our goal is to provide a place where all generations can find common
+            ground with a love for plants. We specialize in low maintenance
+            tropical houseplants. We strive to provide the same experience
+            through shipping our products by not only bringing something green
+            into everyones home but also providing an interactive experience.
           </p>
           <img
             src="https://fontmeme.com/permalink/201124/57ce50e8562b4c6d89e8c321c891f798.png"
