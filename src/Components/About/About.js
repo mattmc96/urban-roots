@@ -19,14 +19,14 @@ const AboutUs = () => {
             <span className={classes.flowers}> Green </span>
           </h2>
           <p className={classes.secondText}>
-            Bloomscape is here to help strengthen your relationship with plants.
-            We make buying plants easy by delivering healthy, ready-to-go plants
-            to your door and setting you up with the tips and tricks you need to
-            help your plants thrive. Plants make life better. We make plants
-            easy.
+            Urban Roots is here to help strengthen your relationship with
+            plants. We make buying plants easy by delivering healthy,
+            ready-to-go plants to your door and setting you up with the tips and
+            tricks you need to help your plants thrive. Plants make life better.
+            We make plants easy.
           </p>
           <img
-            src="https://fontmeme.com/permalink/201124/57ce50e8562b4c6d89e8c321c891f798.png"
+            src="https://fontmeme.com/permalink/201124/9750e08d91e04429d5aa7e4a0d121bfd.png"
             alt="logo"
           />
         </div>
