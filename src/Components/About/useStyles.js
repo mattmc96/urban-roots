@@ -76,7 +76,7 @@ export const useStyles = makeStyles((theme) => ({
   imgBlock: {
     width: '38%',
     backgroundImage:
-      'url("https://images.unsplash.com/photo-1463320898484-cdee8141c787?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fHBsYW50c3xlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=600&q=60")',
+      'url("https://github.com/tessa-woodard/urban-roots/blob/main/assets/about-us.jpeg?raw=true")',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',

@@ -15,8 +15,8 @@ const AboutUs = () => {
       <div className={classes.second}>
         <div className={classes.text}>
           <h2 className={classes.secondTitle}>
-            We take <span className={classes.flowers}> flowers </span>{' '}
-            personally & we bring you happiness
+            We take <span className={classes.flowers}> plants </span> personally
+            & we bring you happiness
           </h2>
           <p className={classes.secondText}>
             Our goal is to provide a place where all generations can find common
