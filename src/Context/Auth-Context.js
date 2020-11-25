@@ -12,6 +12,9 @@ export default ({ children }) => {
     authService.isAuthenticated().then((data) => {
       setUser(data.user)
       setIsAuthenticated(data.isAuthenticated)
+      setIsLoaded(data.isLoaded)
     })
-  })
+  }, [])
+
+  return <div>{!isLoaded ? <h1>Loading...</h1> : <AuthContext.Provider />}</div>
 }
