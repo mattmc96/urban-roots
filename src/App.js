@@ -17,6 +17,11 @@ import Palms from './Components/Plants/Palms/Palms'
 import Cacti from './Components/Plants/Cacti/Cacti'
 import Pothos from './Components/Plants/Pothos/Pothos'
 
+import PrivateRoute from './Components/HOCS/PrivateRoute'
+import PublicRoute from './Components/HOCS/PublicRoute'
+
+import Profile from './Components/Account/Profile'
+
 function App() {
   return (
     <Router>
@@ -24,16 +29,17 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route path="/login" component={Login} />
-          <Route path="/registration" component={Registration} />
-          <Route path="/about" component={About} />
-          <Route path="/shop" component={Shop} />
-          <Route path="/cart" component={Cart} />
-          <Route path="/succulents" component={Succulents} />
-          <Route path="/florals" component={Florals} />
-          <Route path="/palms" component={Palms} />
-          <Route path="/cacti" component={Cacti} />
-          <Route path="/pothos" component={Pothos} />
+          <PublicRoute path="/login" component={Login} />
+          <PublicRoute path="/registration" component={Registration} />
+          <PublicRoute path="/about" component={About} />
+          <PublicRoute path="/shop" component={Shop} />
+          <PublicRoute path="/cart" component={Cart} />
+          <PublicRoute path="/succulents" component={Succulents} />
+          <PublicRoute path="/florals" component={Florals} />
+          <PublicRoute path="/palms" component={Palms} />
+          <PublicRoute path="/cacti" component={Cacti} />
+          <PublicRoute path="/pothos" component={Pothos} />
+          <PrivateRoute path="/profile" component={Profile} />
         </Switch>
       </div>
     </Router>
