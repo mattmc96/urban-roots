@@ -66,7 +66,7 @@ class Header extends Component {
             <ReactBootStrap.Nav.Link href="/login">
               Login
             </ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="/signup">
+            <ReactBootStrap.Nav.Link href="/registration">
               Sign Up
             </ReactBootStrap.Nav.Link>
           </ReactBootStrap.Nav>
