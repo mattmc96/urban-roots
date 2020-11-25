@@ -62,12 +62,12 @@ class Registration extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      first_name: '',
-      last_name: '',
+      firstName: '',
+      lastName: '',
       email: '',
       address: '',
       password: '',
-      confirm_password: ''
+      confirmPassword: ''
     }
     this.handleRegister = this.handleRegister.bind(this)
   }
@@ -79,15 +79,20 @@ class Registration extends Component {
   }
 
   handleRegister = () => {
-    const { first_name, last_name, email, address, password } = this.state
-    if (this.state.password !== this.state.confirm_password) {
+    const { firstName, lastName, email, address, password } = this.state
+    if (this.state.password !== this.state.confirmPassword) {
       alert("Passwords don't match")
       return
     }
     axios
-      .post('/api/user', { first_name, last_name, email, address, password })
+      .post('/api/user/register', {
+        firstName,
+        lastName,
+        email,
+        address,
+        password
+      })
       .then((res) => {
-        this.props.loginUser(res.data)
         this.props.history.push('/')
       })
       .catch((err) => {
@@ -130,7 +135,7 @@ class Registration extends Component {
                 <Grid item xs={12} sm={6}>
                   <TextField
                     autoComplete="fname"
-                    name="first_name"
+                    name="firstName"
                     variant="outlined"
                     required
                     fullWidth
@@ -149,7 +154,7 @@ class Registration extends Component {
                     fullWidth
                     id="lastName"
                     label="Last Name"
-                    name="last_name"
+                    name="lastName"
                     autoComplete="lname"
                     onChange={(e) => {
                       this.handleInput(e)
@@ -175,6 +180,21 @@ class Registration extends Component {
                     variant="outlined"
                     required
                     fullWidth
+                    name="address"
+                    label="address"
+                    type="address"
+                    id="address"
+                    autoComplete="address"
+                    onChange={(e) => {
+                      this.handleInput(e)
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    variant="outlined"
+                    required
+                    fullWidth
                     name="password"
                     label="Password"
                     type="password"
@@ -190,7 +210,7 @@ class Registration extends Component {
                     variant="outlined"
                     required
                     fullWidth
-                    name="confirm_password"
+                    name="confirmPassword"
                     label="Confirm Password"
                     type="password"
                     id="password"

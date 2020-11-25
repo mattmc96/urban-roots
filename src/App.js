@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css'
 
 import Header from './Components/Header/Header'
+import SubHeader from './Components/Header/SubHeader'
 
 import Homepage from './Components/Homepage/Homepage'
 import Login from './Components/Login/Login'
@@ -27,6 +28,7 @@ function App() {
     <Router>
       <div>
         <Header />
+        <SubHeader />
         <Switch>
           <Route exact path="/" component={Homepage} />
           <PublicRoute path="/login" component={Login} />
