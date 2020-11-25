@@ -7,7 +7,7 @@ import SubHeader from './Components/Header/SubHeader'
 
 import Homepage from './Components/Homepage/Homepage'
 import Login from './Components/Login/Login'
-import Registration from './Components/Registration/Registration'
+import Registration from './Components/Registration/Register'
 import About from './Components/About/About'
 import Shop from './Components/Shop/Shop'
 import Cart from './Components/Cart/Cart'

@@ -14,7 +14,7 @@ export default {
   },
   register: (user) => {
     console.log(user)
-    return fetch('/user/register', {
+    return fetch('/api/user/register', {
       method: 'post',
       body: JSON.stringify(user),
       headers: {
@@ -30,7 +30,7 @@ export default {
       .then((data) => data)
   },
   isAuthenticated: () => {
-    return fetch('/user/authenticated').then((res) => {
+    return fetch('/api/dashboard/authenticated').then((res) => {
       if (res.status !== 401) return res.json().then((data) => data)
       else return { isAuthenticated: false, user: { email: '' } }
     })

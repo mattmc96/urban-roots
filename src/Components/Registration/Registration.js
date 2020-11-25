@@ -93,6 +93,7 @@ class Registration extends Component {
         password
       })
       .then((res) => {
+        this.props.loginUser(res.data)
         this.props.history.push('/')
       })
       .catch((err) => {

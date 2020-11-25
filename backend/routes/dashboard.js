@@ -1,15 +1,20 @@
-const router = require("express").Router();
+const router = require('express').Router()
 
 // dashboard route
-router.get("/profile", (req, res) => {
-  res.json({
-    error: null,
-    data: {
-      title: "My profile",
-      content: "profile content",
-      user: req.user,
-    },
-  });
-});
+// router.get('/authenticated', (req, res) => {
+//   res.json({
+//     error: null,
+//     data: {
+//       title: 'My profile',
+//       content: 'profile content',
+//       user: req.user
+//     }
+//   })
+// })
 
-module.exports = router;
+router.get('/authenticated', (req, res) => {
+  const { email } = req.user
+  res.status(200).json({ isAuthenticated: true, user: { email } })
+})
+
+module.exports = router

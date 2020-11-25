@@ -3,7 +3,6 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 
 const User = require('../model/User')
-
 // validation
 const { registerValidation, loginValidation } = require('../server/validation')
 
